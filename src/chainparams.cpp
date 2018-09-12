@@ -139,11 +139,17 @@ public:
 
         checkpointData = (Checkpoints::CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, consensus.hashGenesisBlock),
-            genesis.nTime,
-            0,
-            0
-        };
+            ( 0, consensus.hashGenesisBlock)
+            ( 60000, uint256S("0x00002ae1f476c997f3800d6c7fc733efaa0fc6172d91075724a60a9fd42dcf3a"))
+                            ( 140000, uint256S("0x00000eb02cca5b05f4be1ee4016790e5b1a3817eb12b1aba605024602665ce7e"))
+                            ( 200000, uint256S("0x0000090d945b23a43b757d57f8f396ac748861f22bf1d8914cba440fd59a5c43"))
+                            ( 283259, uint256S("0x0000013a2659b644a854b70678c4efe45143893444babe57dd333d56433967a5")),
+                            1521523110,     // * UNIX timestamp of last checkpoint block
+                            470189,         // * total number of transactions between genesis and last checkpoint
+                                                        //   (the tx=... number in the SetBestChain debug.log lines)
+                            956            // * estimated number of transactions per day after checkpoint
+                                                        //   total number of tx / (checkpoint block height / (24 * 24))
+                        };
 
         // Founders reward script expects a vector of 2-of-3 multisig addresses
         vFoundersRewardAddress = {
