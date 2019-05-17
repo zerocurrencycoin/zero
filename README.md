@@ -65,9 +65,9 @@ Zero has a feature called shielded transactions that ensures full anonymity when
 Zero uses an alternative set of parameters taken from the equihash algorithm, this needs atleast 4GB/8GB of RAM. Zero is one of the most profitable cryptocurrency’s to mine.
 
 
-||DECENTRALISED PAYMENTS||
+||DECENTRALIZED PAYMENTS||
 ----------------------------
-Zero is founded on a decentralised platform, there are no borders. Zero facilitates lightning fast and anonymous money transfers worldwide, without any restrictions or interference from 3rd parties.
+Zero is founded on a decentralized platform, there are no borders. Zero facilitates lightning fast and anonymous money transfers worldwide, without any restrictions or interference from 3rd parties.
 
 
 ||INFLATION||
@@ -132,9 +132,9 @@ Currently only Linux build is officially supported.  8GB RAM is recommended.
 ### Install packages (needs to be done only once)
 ```
 sudo apt-get install \
-      build-essential pkg-config libc6-dev m4 g++-multilib \
-      autoconf libtool ncurses-dev unzip git python python-zmq \
-      zlib1g-dev wget bsdmainutils automake cmake curl
+build-essential pkg-config libc6-dev m4 g++-multilib \
+autoconf libtool ncurses-dev unzip git python python-zmq \
+zlib1g-dev wget curl bsdmainutils automake
 ```
 
 ### Obtain the ZERO software from GitHub
@@ -197,6 +197,11 @@ A sample demonstrating a large number of command line options
 🔩 Running & Using ZERO
 --------------------
 After successfully building, the ZERO binaries are stored in `./src`. The two important binaries are `zerod` and `zero-cli`.
+
+Now, run zerod!
+```
+./src/zerod
+```
 
 Your wallet will be created (on first zerod run) in: ~/.zero/wallet.zero
 Please backup your wallet often and keep it safe.
